@@ -19,15 +19,11 @@ body{
 .bg-grad1{
   background-image: url(./images/milkywayellipse.png);
   width:cover;
-  margin-left:15px;
   margin-top: -70px;
 }
 
 .whole-grad{
   background-image: url(./images/bggradients.png);
-  width: cover;
-  margin-left:15px;
- 
 }
 .slider{
   background-image: url(./images/gallery\ element-2.png);
@@ -41,23 +37,26 @@ body{
 
 
 
-header{
-
+header {
   width: 1160px;
-  margin-top: 100px; 
-  margin-left: 50px;
-  margin-right: -100px;
-  position : fixed;
-  z-index: 10001; 
-  padding: 20px 7%; display: flex;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10001;
+  padding: 20px 7%;
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
   transition: all .50s ease;
   background-color: hwb(238 7% 71%);
   height: 30px;
   border-radius: 20px;
-  
 }
+
+
 #logo {width: 50px; 
   height: 60px;
   margin-left:-270px;
@@ -73,16 +72,11 @@ position: absolute;
  align-items:  center;
 
 }
-.tab1{
-  padding-left: 15px;
-}
-.tab3{
-  padding-left: 47px;
-}
+
 .navlist a, .logo{
   display:inline-block;
   color: var(--text-color);
-  width: 50%;
+  width: 100%;
   align-items: center;
   padding: 9px 25px;
   background: transparent;
@@ -170,35 +164,28 @@ position: absolute;
 }
 
 section{
-  padding : 0 17%;
   color: #f5f6f7;
 
 }
 .hero{
   position: absolute;
-  width : 100%;
   height: 100vh;
-
   background-position: center;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   align-items : center;
   gap: 2rem;
   color:#ffffff;
-
-  margin: 60px 0 0 110px;
-
-
-
+  margin: 60px 0 0 0;
 }
 
 
 .hero-text{
-  width: 1385px;
-  height: 555px;
-  background-image:url(../images/worldmap.svg);
-  margin-left: -343px;
-  margin-top: 50px;  
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/worldmap.svg);
+  margin-top: 50px;
+  background-repeat: round; 
 }
 .hero-img img{
   width : 100%;
@@ -214,12 +201,7 @@ section{
 }
 .heading{
   margin-top: 150px;
-  margin-left: -105px;
   padding-bottom: 40px;
-  font-weight:16000px;
-
-
-  
 }
 .hero-text h5{
   font-size: 18px;
@@ -234,12 +216,10 @@ section{
   font-weight: 400;
   line-height: 32px;
   color: var(--text-color);
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
   text-align: center;
   color:#fffbfb;
   text-shadow: 2px 2px #000000;
-  margin-left: 375px;
-
 }
 
 
@@ -273,6 +253,8 @@ margin: 0 0 0 0;}
 .main-hero{
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
 .btn{
 
@@ -297,14 +279,10 @@ margin: 0 0 0 0;}
   border: 2px solid transparent;
   border-radius: 50px;
   border: 2px solid transparent;
-
-
   border-radius: 22px;
   font-size: 20px;
   font-weight: 900;
   transition: all .6s ease;
-margin-left: 440px;
-
 }
 .button2{
   display: inline-block;
@@ -319,8 +297,6 @@ margin-left: 440px;
   font-size: 20px;
   font-weight: 900;
   transition: all .6s ease;
- margin: 0 0 0 90px;
-
 }
 .button1:hover, .button2:hover{
   transform: scale(1.1);
@@ -396,12 +372,12 @@ margin-left: 440px;
 .slide-track{
   display: flex;
   margin-top: 25px;
-  width: calc(250px * 18);
+  width: 100vw;
   animation: scroll 40s linear infinite;
 }
 .slide-track2{
   display: flex;
-  width: cacl(550px * 14);
+  width: 90vw;
   animation: scroll 20s linear infinite;
 }
 .slide-track:hover,.slide-track2:hover{
@@ -469,12 +445,12 @@ margin-left: 440px;
   transform: rotateZ(180deg);
 }
 .start h2{
-  margin: -300px 0 0 -155px;
+  margin: -300px 0 0 0px;
   font-size: 30px;
   padding-bottom: 20px;
 }
 #start, #start1 {
-  margin-left:-155px;
+  margin-left:0px;
   font-size: 20px;
 
 }
@@ -486,7 +462,6 @@ margin-left: 440px;
 .aboutus{
   text-align: end;
   padding-top:20px;
-  margin-right: -150px;
   padding-bottom: 20px;;
 }
 .aboutus h2{
@@ -497,91 +472,63 @@ margin-left: 440px;
 .aboutus p{
   font-size:20px;
 }
-.bulb img{ 
-  margin-left: 500px;
+.flow{
+  padding: 0 110px;
 }
 .union{
-  margin-left:1170px;
-  margin-top: -250px;
+  position:absolute;
+}
+.right{
+  right:0;
+}
+.left{
+  left:0;
 }
 .arrow2{
-  margin: 0px 0 0 230px;
+  margin: 0px 0 0 170px;
 }
 .bulb{
-  margin-top:-500px;
-  margin-left: -400px;
+  margin-top:-200px;
 }
 .community h2{
   padding-top:20px;
   font-size: 30px;
-  margin-left: -150px;
 }
 .union2{
   margin-top: -290px;
   margin-right:500px;
  
 }
-
+.collaborators{
+  display: flex;
+  flex-direction: column;
+}
 .collaborators h2{
   font-size: 45px;
-  margin-top:-450px;
-  margin-left: 330px;
-
-}
-.union3{
-  margin-top: 110px;
-  margin-left: 1170px;
-}
-.union4{
-  margin-left:-1445px;
+  margin:-450px auto 0 auto;
 }
 .logos{
-  margin-top:-140px;
+  margin-top: 110px;
   background-color:#D9D9D9;
   border-radius: 80px;
   box-shadow:10px 10px 100px 10px #2C5789;
   height: 125px;
-}
-#tata {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin-top:-10.5px;
-  margin-left: 15px;
-
-}
-#github {
-  margin-bottom:42px;
-  margin-left: 10px;
-}
-#amazon{
-  margin-bottom: 35px;
-  margin-left: 40px;
-}
-#stripe{
-  margin-bottom: 43px;
-  margin-left: 50px;
-}
-#google{
-  margin-bottom: 40px;
-  margin-left: 55px;
-}
-#gumroad{
-  margin-bottom: 48px;
-  margin-left: 60px;
-}
-
-#arrow{
-  margin-bottom: 50px;
-  margin-left: 35px;
+  gap: 70px;
 }
 .collaborators img:hover{
   transform: scale(1.2); 
 }
+.events{
+  margin-left: 190px;
+}
 .events h2{
   font-size: 58px;
-  margin-top: 290px;
+  margin-top: 110px;
   font-weight: bold;
-  padding-bottom: 110px;
-  margin-left: -80px;
+  padding-bottom: 60px;
 }
 .collabs{
   margin-top: -40px;
@@ -590,7 +537,6 @@ margin-left: 440px;
 .events p{
   font-size: 17px;
   padding-bottom: 10px;
-  margin-left: -55px;
 padding-bottom:7px;
 display: block;
 }
@@ -767,118 +713,48 @@ padding-bottom: 20px;
 #arrow4:hover{
   transform: scale(1.2);
 }
+
+
+
 footer{
   background-image: url(./images/Group\ 911.png);
-  width:1330px;
-  height:383px;
-  margin-left: 50px;
+  width:100vw;
+  height:40vh;
   margin-bottom: 50px;
-  margin-top: 320px;
+  margin-top: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
  footer h2{
   color: #FFE9B1;
   font-weight: 500px;
   font-size: 30px;
-  padding-top:36px;
-  margin-left: 1117px;
-  display:inline-block;
  }
- .contact{
-  margin-left: 65px;
-  padding-top: 40px;
+ .third, .first{
+  width: 200px;
  }
- #number{
-  margin-left: 65px;
-  padding-top: 30px;
- }
- #faq{
-  margin-left: 65px;
-  padding-top: 30px;
- }
- .youtube h4{
-  margin-left: 1157px;
-  margin-top :-160px;
-  font-size: 18px;
-  display: block;
- }
- .youtube #yt{
-  margin-left: 1180px;
-  display: block;
-  margin-top: -25px;
+ .third a{
   color:#fff;
   transform: scale(1.9);
  }
-
- .fbmain h4{
-  margin-left: 1152px;
-  font-size: 18px;
-  display: block;
-  margin-top:35px;
-
+ .first div{
+  margin-top: 15px;
  }
-.fbmain #fb{
-  margin-left: 1180px;
-  display: block;
-  margin-top: -26px;
-  color:#fff;
-  transform: scale(1.9);
-}
-.fbmain{
-  margin-top: 20px;
-}
 
-.twitter h4{
-  font-size: 18px;
-  margin-left: 1157px;
-  margin-top:35px;
-  display:block;
-}
-.twitter #twit{
-  margin-left:1180px;
-  margin-top:-25px;
-  display:block;
-  color:#fff;
-  transform: scale(1.9);
-}
+ .third div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+ }
 
-.back_to_top h3{
-  font-weight: 900;
-  font-size:19px;
-  margin-left: 1110px;
-  margin-top: 52px;
-  display:block
-}
-.back_to_top #arrow-up{
-  display:block;
-  color:#fff;
-  transform: scale(2.3);
-  margin-left: 1270px;
-  margin-top: -29px;
-}
-.foot-elements #privacy{
-  font-weight: 900;
-  font-size:19px;
-  margin-left: 65px;
-  margin-top: -29px;
-  display:block;
-  width:150px;
-}
-.foot-elements #tos{
-  font-weight: 900;
-  font-size:19px;
-  margin-left: 275px;
-  margin-top: -28px;
-  display:block;
-  width: 180px;
-}
 #privacy:hover,#tos:hover, .back_to_top:hover{
   color:#0AA1D6;
 }
+
 .email h3{
   font-size: 25px;
-  display: block;
-  margin-top: -210px;
-  margin-left: 420px;;
 }
 #emailip{
   background-color: #1D0B49;
@@ -886,14 +762,12 @@ footer{
 input{
   position:  absolute;
   background-color:#1D0B49;
- 
-   font-size: 1.4rem;
+  font-size: 1.2rem;
   border-radius: 20px;
   width: 495px;
   height: 40px;
   display:block;
   color:#fff;
-  margin-left: 412px;
   margin-top: 2px;
   border: 2px solid black;
   transition: 0.1 ease;
