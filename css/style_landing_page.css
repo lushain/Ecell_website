@@ -139,6 +139,22 @@ position: absolute;
   color: var(--main-color);
 
 }
+.logo{
+  width:70px;
+  height: 70px;
+  margin: 10px -100px 0 0px;
+  padding-right: 30px;
+}
+
+.tab5, .tab4{width:135px;
+margin: 0 0 0 0;}
+.tab3,.tab2, .tab1{margin:0 60 0 90%; width:80px;}
+.tab2{
+  margin-left: -10px;
+  margin-right: -10px;
+
+}
+
 .title{
   transform: translateY(-5px);
   margin-left: -190px;
@@ -236,19 +252,6 @@ section{
   padding: 30px;
   padding-top: 30px;
 }
-.logo{width:70px;
-height: 70px;
-margin: 10px -100px 0 0px;
-padding-right: 30px;}
-
-.tab5, .tab4{width:135px;
-margin: 0 0 0 0;}
-.tab3,.tab2, .tab1{margin:0 60 0 90%; width:80px;}
-.tab2{
-  margin-left: -10px;
-  margin-right: -10px;
-
-}
 
 .main-hero{
   display: flex;
@@ -257,17 +260,11 @@ margin: 0 0 0 0;}
   gap: 40px;
 }
 .btn{
-
-
   background: -webkit-linear-gradient(0deg,#FAC410, #A25401);
   -webkit-background-clip : text;
   -webkit-text-fill-color: transparent;
   border: 2px solid transparent;
   align-items: center;
-  
-
-
-
 }
 
 .button1{

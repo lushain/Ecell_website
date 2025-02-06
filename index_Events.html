@@ -4,6 +4,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width= device-width, initial-scale= 1.0"/>
         <link href="css/style_Events.css" rel="stylesheet"/>
+
         <meta http-equiv="X-UA-Compatible" content ="IE= edge"/>
         <!--box icon link-->
         <link rel="stylesheet"
@@ -27,29 +28,29 @@
 
     <body>
         <main>
-          <header>
-              <a href="#" class="logo">
-                  <img src="../images/logo.svg"/>
-              </a>
-              <a href="#" class="title">
-                  <img src="./images/ecellnsut.svg"/>
-              </a>
-              <ul class ="navlist" >
-                  <li class="tab1"><a href="index_landing_page.html">Home</a></li>
-                  <li class="tab2"><a href="#">About_Us</a></li>
-                  <li class="tab3"><a href="index_Events.html">Events</a></li>
-                  <li class="tab4"><a href="#">Collaborations</a></li>
-                  <li class="tab5"><a href="index_Get_In_touch.html">Get_In_Touch</a></li>
-              </ul>
-
-              <div class="right-content">
-                  <a href="#" class="nav-btn">Sign In</a>
-                  <ul class ="sideBar" >
-                      <li ></li>
-                  </ul>
-                  <a href="#"><div onclick=showSidebar() class ="bx bx-menu" id="menu-icon"></div></a>
-              </div>
-          </header>
+            <header id="navbar" style="margin-top: 30px;">
+                <a href="#" class="logo" >
+                    <img src="./images/logo.svg" id="logo"/>
+                </a>
+                <a href="#" class="title">
+                    <img src="./images/ecellnsut.svg"/>
+                </a>
+                <ul class ="navlist" >
+                    <li class="tab1"><a href="index_landing_page.html">Home</a></li>
+                    <li class="tab2"><a href="#">About Us</a></li>
+                    <li class="tab3"><a href="index_Events.html">Events</a></li>
+                    <li class="tab4"><a href="#">Collaborations</a></li>
+                    <li class="tab5"><a href="index_Get_In_touch.html">Get In Touch</a></li>
+                </ul>
+                <div class="right-content">
+                    <a href="index_signup.html" class="nav-btn">Sign In</a>
+                    <ul class ="sideBar" >
+                        <li ></li>
+                      
+                    </ul>
+                    <a href="#"><div onclick=showSidebar() class ="bx bx-menu" id="menu-icon"></div></a>
+                </div>
+            </header>
 
 
           <section>
@@ -128,6 +129,8 @@
             </div>
             <div class="events_timeline">
                 <h2>EVENTS 2024-2025</h2>
+                <div class="eventG">
+                    
                 
                 <div class="e-summit">
                     <h1>E SUMMIT</h1>
@@ -203,14 +206,14 @@
                     <div class="button4"><a href="#" class="btn">CHECK OUT THE PAGE</a></div>
                     <img src="./images/shapes.png" id="side_rect2"/>
                 </div>
-
+                </div>
             </div>
             <div class="guest_speakers">
                 <h2>GUEST SPEAKERS</h2>
                 <div class="display">
                     <img src="./images/shapes.png" class="rect1"/>
-                    <img id="union3" src="./images/Union-2.png"/>
-                    <img id="union4" src="./images/Union.png"/>
+                    <img id="coil1" src="./images/Union-2.png"/>
+                    <img id="coil2" src="./images/Union.png"/>
                     
                     <div class="slide-container1 swiper">
                       <div class="slide-content1">
@@ -395,50 +398,41 @@
                   </div>
             </div>
             <footer>
-                <h2>SOCIAL</h2>
-                <h3 class="contact">CONTACT US</h3>
-                <h3 id="number">236782461</h3>
-                <h3 id="faq">FAQS</h3>
-                <div class="medias">
-                  <div class="youtube">
-                    <h4 id="yut">YOUTUBE</h4>
+                <div class="first">
+                  <h2 >CONTACT US</h2>
+                  <div><h3 >Privacy Policy</h3></div>
+                  <div><h3>Terms Of Service</h3></div>
+                  <div><h3 >FAQS</h3></div> 
+                </div>
+                <div class="second">
+                  <div class="email">
+                    <h3>Reach us out and Express your ideas</h3>
+                  <div id="emailip">
+                    <input type="email"  id="email.input" placeholder="enter your email" required/>
+                  </div>
+                </div>
+                </div>
+                <div class="third">
+                  <h2>Social</h2>
+                  <div>
                     <a href="#" id="yt"><i class="ri-youtube-fill"></i></a>
+                    <h3 id="yut">YOUTUBE</h3>
                   </div>
-                  <div class="fbmain">
-                    <h4 id="facebook">FACEBOOK</h4>
+                  <div>
                     <a href="#" id="fb"><i class="ri-facebook-fill"></i></a>
+                    <h3 id="facebook">FACEBOOK</h3>
                   </div>
-                  <div class="twitter">
-                    <h4 id="tweet">TWITTER</h4>
+                  <div>
                     <a href="#" id="twit"><i class="ri-twitter-fill"></i></a>
-                  </div>   
-                </div>  
-                <div class="back_to_top">
-                  <h3>Back to Top</h3>
-                  <a href="#" id="arrow-up"><i class="ri-arrow-up-line"></i></a>
-                </div> 
-                <div class="foot-elements">
-                  <h3 id="privacy">Privacy policy</h3>
-                  <h3 id="tos">Terms of service</h3>
+                    <h3 id="tweet">TWITTER</h3>
+                  </div>
                 </div>
-                <div class="email">
-                  <h3>Reach us out and Express your ideas</h3>
-                <div id="emailip">
-                  
-                  <input type="email"  id="email.input" placeholder="        |                enter your email" required/>
-                </div>
-                 
-                </div>
-            </footer>
+        
+              </footer>
             
           </section>
-          
-        
-
-        
-        
-        
         </main>
+        <script src="nav.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="script_Events.js"></script>
